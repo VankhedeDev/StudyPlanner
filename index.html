@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>CMA Final Dec 2026 – Command Centre</title>
+<style>
+:root{--bg:#f4f6fb;--c:#fff;--t:#1a2236;--m:#6b7791;--b:#e3e8f2;--ac:#3b5bdb;--r:#c62828;--a:#d98200;--g:#2e7d32;--sh:0 1px 3px rgba(20,30,60,.08),0 6px 18px rgba(20,30,60,.05);box-sizing:border-box}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e131d;--c:#171f2f;--t:#e8edf6;--m:#9aa6bc;--b:#27324a;--ac:#8aa9ff;--sh:0 1px 3px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#0e131d;--c:#171f2f;--t:#e8edf6;--m:#9aa6bc;--b:#27324a;--ac:#8aa9ff;--sh:0 1px 3px rgba(0,0,0,.4)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:15px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+.hero{background:linear-gradient(135deg,#1e3a8a,#3b5bdb 55%,#0e9f9d);color:#fff;padding:calc(22px + env(safe-area-inset-top,0px)) 0 54px}.hero h1{margin:0;font-size:1.7rem;letter-spacing:-.3px}.hero p{margin:4px 0 0;opacity:.88;font-size:.92rem}.hero .chips{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}.hero .chips span{background:rgba(255,255,255,.18);border-radius:99px;padding:2px 11px;font-size:.8rem}
+.w{max-width:1100px;margin:auto;padding:0 14px}#app{margin-top:-36px;padding-bottom:calc(30px + env(safe-area-inset-bottom,0px))}h3{margin:18px 0 8px}.m{color:var(--m);font-size:.84rem}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0;position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0}
+button,select,input,textarea{font:inherit;color:var(--t);background:var(--c);border:1px solid var(--b);border-radius:10px;padding:7px 11px}button{cursor:pointer;transition:.15s}button:hover{border-color:var(--ac)}
+button.on,button.pri{background:linear-gradient(135deg,#3b5bdb,#0e9f9d);color:#fff;border-color:transparent}:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.card{background:var(--c);border-radius:14px;padding:11px 13px;box-shadow:var(--sh);border-left:4px solid var(--ac)}.card b{display:block;font-size:1.45rem;color:var(--ac);line-height:1.2}.card span{font-size:.76rem;color:var(--m)}
+progress{width:100%;height:8px;appearance:none;-webkit-appearance:none;border:0;border-radius:99px;background:var(--b);overflow:hidden}progress::-webkit-progress-bar{background:var(--b)}progress::-webkit-progress-value{background:linear-gradient(90deg,#3b5bdb,#0e9f9d);border-radius:99px}progress::-moz-progress-bar{background:#3b5bdb}
+.day{background:var(--c);border-radius:14px;margin:12px 0;overflow:hidden;box-shadow:var(--sh)}.day header{padding:10px 14px;background:var(--bg);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}.day header progress{max-width:130px}
+.tag{background:var(--c);border:1px solid var(--b);border-radius:99px;padding:0 10px;font-size:.78rem}.ex{background:#fff1c9;color:#5a4300;padding:8px 14px;font-weight:600}
+.t{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;padding:10px 14px;border-top:1px solid var(--b);border-left:4px solid var(--b)}.t:hover{background:var(--bg)}.t.ok{opacity:.55}.kA{border-left-color:#7c4dcc}.kB{border-left-color:#0b8a84}.kC{border-left-color:#d9622b}
+.t label{min-width:150px}.tp{flex:1 1 220px}.ac{font-size:.8rem;color:var(--m)}.t input[data-n]{flex:1 1 140px}
+.p{font-size:.72rem;font-weight:700;color:#fff;border-radius:99px;padding:1px 9px}.pA{background:#7c4dcc}.pB{background:#0b8a84}.pC{background:#d9622b}.mvd{color:var(--a);font-size:.8rem}
+.fb{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.fb input{min-width:130px}.sc{overflow-x:auto;background:var(--c);border-radius:14px;box-shadow:var(--sh)}table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid var(--b);padding:7px 9px;text-align:left;vertical-align:top;font-size:.88rem}th{background:var(--bg)}
+.pn{background:var(--c);border-radius:14px;padding:6px 16px 16px;box-shadow:var(--sh)}.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.g div{background:var(--bg);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px}
+#pdoc{display:none}#pdoc h1{font-size:1.3rem;margin:0}#pdoc h3{font-size:.95rem;margin:14px 0 4px}#pdoc table{border:1px solid #999}#pdoc td,#pdoc th{border:1px solid #bbb;padding:4px 6px;font-size:.8rem}#pdoc table{break-inside:avoid}
+@media print{.hero,#app{display:none!important}#pdoc{display:block}body{background:#fff;color:#000}}
+</style></head><body><header class="hero"><div class="w"><h1>CMA Final Dec 2026 · Command Centre</h1><p>Group IV · P17 CMAD · P18 CFR · P19 ITLP</p><div class="chips"><span>Study period 6 Oct – 5 Dec 2026</span><span>Exams: 11 · 13 · 15 Dec</span></div></div></header><div class="w"><div id="app"></div></div><div id="pdoc"></div>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PN={A:"P17 CMAD",B:"P18 CFR",C:"P19 ITLP"};
+const MOD={A:["Basics of Cost Audit","Companies (Cost Records and Audit) Rules, 2014 (as amended)","Cost Auditor","Overview of Cost Accounting Standards and GACAP","Cost Auditing and Assurance Standards","Cost Audit Programme","Cost Audit Documentation, Audit Process and Execution","Preparation and Filing of Cost Audit Report","Basics of Management Audit","Management Reporting Issues and Analysis","Management Audit in Different Functions","Evaluation of Corporate Image","Information Systems Security Audit","Internal Control and Internal Audit","Operational Audit and Internal Audit under Companies Act, 2013","Audit of Different Service Organisations","Forensic Audit","Anti-Money Laundering"],
+B:["Specific Accounting Standards","Valuation of Shares (including Determination of Goodwill, Post-valuation of Tangible and Intangible Assets)","Accounting of Financial Instruments","NBFCs – Provisioning Norms, Accounting and Reporting","Accounting for Business Combination and Restructuring","Consolidated Financial Statements and Separate Financial Statements","Recent Developments in Financial Reporting","Government Accounting in India"],
+C:["Supply under GST - A Refresh","Time of Supply (Advanced)","Place of Supply","Valuation (Advanced)","Input Tax Credit (Advanced)","Zero Rated Supplies and Deemed Exports","TDS & TCS under GST","E-way Bill","GST Refunds- Inverted Duty Structure and Zero-rated Supplies","GST Returns","Accounts and Records","GST Annual Return and GST Audit Return","Transition to GST (Transitional Provisions)","Dispute Resolution Mechanism under GST","Inspection, Search, Seizure, Arrest and Prosecution","Anti-profiteering","Walkthrough of GSTN Portal","Valuation and Related Party Transactions","Customs Procedures - Baggage & Courier / Post","Manufacture in Bond","Duty Drawback"]};
+const SUB=["Accounting Policies, Changes in Accounting Estimates and Errors (Ind AS 8)","Income Taxes (Ind AS 12)","Property, Plant and Equipment (Ind AS 16)","Leases (Ind AS 116)","The Effects of Changes in Foreign Exchange Rates (Ind AS 21)","Borrowing Costs (Ind AS 23)","Impairment of Assets (Ind AS 36)","Intangible Assets (Ind AS 38)","Share based Payment (Ind AS 102)","Operating Segments (Ind AS 108)","Fair Value Measurement (Ind AS 113)","Revenue from Contracts with Customers (Ind AS 115)"];
+const ACT={L:"Learn",R:"Revise",N:"Numerical",M:"MCQ",W:"Answer Writing",Q:"Previous Question Practice",T:"Mock Test",E:"Error Analysis",C:"Rapid Recall"};
+const EX={"2026-12-11":"A","2026-12-13":"B","2026-12-15":"C"};
+const SL={w:[["5:45–7:15 AM",1.5],["8:30–10:30 PM",2]],s:[["7:00–9:30 AM",2.5],["11:00 AM–1:00 PM",2],["4:00–6:00 PM",2],["8:00–9:00 PM",1]],h:[["7:00–10:00 AM",3],["11:00 AM–1:30 PM",2.5],["3:00–6:00 PM",3],["7:00–9:30 PM",2.5]]};
+const MIN={w:3.5,s:7.5,h:10,x:0};
+/* Schedule: paper(A=P17,B=P18,C=P19) + module(s) + activity; one token per slot. 1.5 = P18 M1 subtopic */
+const SCH=`B1.1L A1L
+B1.2L C1L
+B1.3L A2L
+B1.4L C2L
+B1.5,1.6L A3L C3L B1.5,1.6N
+B1.7,1.8L A4L C4L B1.7,1.8N
+B1.9L C5L
+B1.10,1.11L A5L
+B1.12L C6L
+B1N A6L
+B2L C7L
+B2N A7L C8L B2N
+B3L A8L C9L B3N
+B4L C10L
+B4N A1-8R
+B5L C11L
+B5L A9L
+B5L C12L
+B5L A10L C13L B5N
+B5W A9-10R C14L B5N
+B6L A11L
+B6L C15L
+B6L A12L
+B6L C16L
+B6L A13L
+B6L C17L B6N C17R
+B6L A14L C18L B6N
+B6N C19L
+B6N A15L
+B7L C20L
+B7L A16L
+B7L C21L
+B7L A17L B7R A17R
+B7L C18-21R B7R C18-21R
+B8L A18L
+B8L C1-5R
+B8R A1-8R
+B1-4R C6-10R
+B5N A9-13R
+B6N C11-17R A14-18R B6N
+B7,8W AT CT B7,8W
+B1R A1-3R
+B1R C1-4R
+B1R A4-5R
+B2R C5-7R
+B3-4R A6-8R
+B5R C8-10R B5R C8-10R
+B6R A9-13R B6R A9-13R
+B7,8W C11-14R
+BT AE
+CT BE
+AT CE
+B1,5R A2,3R
+B6N A4-8R C18-21R B6N
+B1-8C A9-18C C1-21C C1-21R
+BT AE
+AT BE
+CT AE
+A1-8R B1R
+A9-18R B5,6R
+AT BT CT BC`.split("\n");
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const DAYS=[],T=[];
+SCH.forEach((ln,n)=>{const d=new Date(2026,9,6+n),k=iso(d),w=d.getDay(),x=EX[k];
+ const ty=x?'x':w==0?'h':w==6?(Math.ceil(d.getDate()/7)%2==0?'h':'s'):'w';
+ const lbl=x?"Exam day – "+PN[x]:w==0?"Sunday":ty=='h'?"2nd/4th Saturday holiday":ty=='s'?"Working Saturday":"Working day";
+ DAYS.push({k,d,ty,lbl,ex:x});
+ ln.split(" ").forEach((tk,i)=>{const m=tk.match(/^([ABC])([\d.,\-]*)([A-Z])$/),sl=SL[ty=='x'?'w':ty][i];if(!m||!sl)return;
+  const mods=[];m[2]&&m[2].split(",").forEach(y=>{if(y.includes("."))mods.push(1);else if(y.includes("-")){const[a,b]=y.split("-").map(Number);for(let j=a;j<=b;j++)mods.push(j)}else mods.push(+y)});
+  T.push({id:k+"."+i,k,time:sl[0],h:sl[1],p:m[1],sp:m[2],a:m[3],mods})})});
+const LAST=DAYS[DAYS.length-1].k;
+const ph=k=>k<="2026-10-25"?"Phase 1 · First coverage":k<="2026-11-15"?"Phase 2 · Complete syllabus + 1st revision":k<="2026-11-29"?"Phase 3 · Full revision + tests":k<="2026-12-05"?"Phase 4 · Mocks, error analysis + final revision (P17→P18→P19)":"Phase 5 · Exam-sequence revision";
+function lab(t){if(!t.sp)return"Full paper – all modules";return t.sp.split(",").map(x=>{if(x.includes("."))return"M1 · "+x+" "+SUB[x.split(".")[1]-1];if(x.includes("-")){const[a,b]=x.split("-");return`M${a}–M${b}: `+MOD[t.p].slice(a-1,b).map((n,i)=>"M"+(+a+i)+" "+n).join("; ")}return"M"+x+" "+MOD[t.p][x-1]}).join(" + ")}
+/* state */
+let S={d:{},n:{},r:{},v:{},mv:{},mist:[],mock:[]};
+try{S=Object.assign(S,JSON.parse(localStorage.getItem("cmaPlan26")||"{}"))}catch(e){}
+const sv=()=>{try{localStorage.setItem("cmaPlan26",JSON.stringify(S))}catch(e){}};
+let view="today",wi=null,F={p:"",m:"",from:"",to:"",st:"",ty:""};
+const now=new Date();now.setHours(0,0,0,0);
+const tk=iso(now)<DAYS[0].k?DAYS[0].k:iso(now)>LAST?LAST:iso(now);
+const tasksFor=k=>T.filter(t=>t.k==k&&!S.mv[t.id]).concat(T.filter(t=>S.mv[t.id]==k));
+const hrs=a=>a.reduce((s,t)=>s+t.h,0),pct=a=>{const h=hrs(a);return h?Math.round(100*hrs(a.filter(t=>S.d[t.id]))/h):0};
+const bar=(v,m)=>`<progress max="${m}" value="${v}"></progress>`;
+function row(t){const r=S.r[t.id]||"";return `<div class="t k${t.p}${S.d[t.id]?' ok':''}"><label><input type="checkbox" data-c="${t.id}" ${S.d[t.id]?'checked':''} aria-label="Mark complete"> <b>${t.time}</b></label><span class="p p${t.p}">${PN[t.p]}</span><span class="tp">${esc(lab(t))}</span><span class="ac">${ACT[t.a]} · ${t.h}h</span>${S.mv[t.id]?'<span class="mvd">↪ catch-up</span>':''}<select data-r="${t.id}" aria-label="Status">${[["","RAG"],["R","Red"],["A","Amber"],["G","Green"]].map(o=>`<option value="${o[0]}" ${r==o[0]?'selected':''}>${o[1]}</option>`).join("")}</select><input data-n="${t.id}" value="${esc(S.n[t.id]||'')}" placeholder="Notes" aria-label="Notes"></div>`}
+function day(D,ts){const all=tasksFor(D.k),dn=hrs(all.filter(t=>S.d[t.id])),mn=MIN[D.ty];
+ return `<section class="day" ${D.k==tk?'id="today"':''}><header><b>${D.d.toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short',year:'numeric'})}</b><span class="tag">${D.lbl}</span><span class="m">${ph(D.k)}</span>${mn?`<span class="m">Daily minimum: ${dn}/${mn} h</span>${bar(Math.min(dn,mn),mn)}`:''}</header>${D.ex?`<div class="ex">📝 EXAM ${PN[D.ex]} · 10:00 AM–1:00 PM</div>`:''}${(ts||all).map(row).join("")||'<div class="t m">No matching tasks</div>'}</section>`}
+function dash(){const tot=hrs(T),dn=hrs(T.filter(t=>S.d[t.id])),rg=c=>T.filter(t=>S.r[t.id]==c).length;
+ const nx=Object.keys(EX).find(k=>k>=iso(now)),days=Math.max(0,Math.ceil((new Date(2026,11,5)-now)/864e5));
+ let ns="—";for(const D of DAYS){if(D.k<tk)continue;const t=tasksFor(D.k).find(t=>!S.d[t.id]);if(t){ns=`${D.d.toLocaleDateString('en-IN',{day:'2-digit',month:'short'})} ${t.time} · ${PN[t.p]} ${ACT[t.a]}`;break}}
+ const c=(a,b)=>`<div class="card"><b>${a}</b><span>${b}</span></div>`;
+ return `<div class="cards">${c(days,"Days left to finish prep (5 Dec)")}${c(tot+" h","Planned study hours")}${c(dn+" h","Completed hours")}${c(pct(T)+"%","Syllabus completion")}${["A","B","C"].map(p=>c(pct(T.filter(t=>t.p==p))+"%",PN[p]+" completion")).join("")}${c(rg("R"),"Red topics")}${c(rg("A"),"Amber topics")}${c(rg("G"),"Green topics")}${c(`<small>${ns}</small>`,"Next study session")}${c(nx?`<small>${PN[EX[nx]]}<br>${nx}</small>`:"Done","Next examination")}</div>`}
+function pred(t){const m=F.m?+F.m:0;return(!F.p||t.p==F.p)&&(!m||t.mods.includes(m))&&(!F.ty||t.a==F.ty)&&(!F.st||(F.st=="D"?S.d[t.id]:F.st=="P"?!S.d[t.id]:S.r[t.id]==F.st))}
+function fbar(){const o=(v,l,c)=>`<option value="${v}" ${c==v?'selected':''}>${l}</option>`;
+ return `<div class="fb"><select data-f="p" aria-label="Paper">${o("","All papers",F.p)}${["A","B","C"].map(p=>o(p,PN[p],F.p)).join("")}</select><select data-f="m" aria-label="Module">${o("","All modules",F.m)}${Array.from({length:21},(_,i)=>o(i+1,"Module "+(i+1),F.m)).join("")}</select><input type="date" data-f="from" value="${F.from}" aria-label="From date"><input type="date" data-f="to" value="${F.to}" aria-label="To date"><select data-f="st" aria-label="Status">${[["","Any status"],["D","Done"],["P","Pending"],["R","Red"],["A","Amber"],["G","Green"]].map(a=>o(a[0],a[1],F.st)).join("")}</select><select data-f="ty" aria-label="Study type">${o("","All study types",F.ty)}${Object.keys(ACT).map(k=>o(k,ACT[k],F.ty)).join("")}</select><button data-f="reset">Reset</button></div>`}
+const cal=(f)=>(f?fbar():"")+DAYS.filter(D=>!f||((!F.from||D.k>=F.from)&&(!F.to||D.k<=F.to))).map(D=>{const ts=f?tasksFor(D.k).filter(pred):null;return f&&!ts.length?"":day(D,ts)}).join("");
+function week(){if(wi==null){const i=DAYS.findIndex(D=>D.k==tk);wi=Math.max(0,i-((DAYS[i].d.getDay()+6)%7))}
+ return `<div class="fb"><button data-w="-7">◀ Prev week</button><button data-w="7">Next week ▶</button></div>`+DAYS.slice(wi,wi+7).map(D=>day(D)).join("")}
+function mods(){return["A","B","C"].map(p=>`<h3>${PN[p]} <span class="m">${pct(T.filter(t=>t.p==p))}% complete</span></h3>${bar(pct(T.filter(t=>t.p==p)),100)}<div class="sc"><table><tr><th>Module<th>Tasks done<th>Revisions</tr>${MOD[p].map((nm,i)=>{const a=T.filter(t=>t.p==p&&t.mods.includes(i+1)),dn=a.filter(t=>S.d[t.id]).length,key=p+(i+1);
+ const sub=p=="B"&&i==0?`<details><summary class="m">12 subtopics</summary>${SUB.map((s,j)=>{const b=T.filter(t=>t.p=="B"&&t.sp.split(",").includes("1."+(j+1)));return`<div class="m">${b.length&&b.every(t=>S.d[t.id])?"✔":"○"} 1.${j+1} ${s}</div>`}).join("")}</details>`:"";
+ return`<tr><td>M${i+1} ${nm}${sub}<td>${dn}/${a.length}${bar(dn,a.length||1)}<td><button data-rv="${key}" data-dl="-1" aria-label="Decrease">−</button> <b>${S.v[key]||0}</b> <button data-rv="${key}" data-dl="1" aria-label="Increase">+</button></tr>`}).join("")}</table></div>`).join("")}
+const po=(id)=>`<select id="${id}" ${id=="mp"?'data-mp="1"':''}>${["A","B","C"].map(p=>`<option value="${p}">${PN[p]}</option>`).join("")}</select>`;
+const mo=p=>MOD[p].map((n,i)=>`<option>M${i+1} ${esc(n)}</option>`).join("");
+function mist(){return `<h3>Mistake Book</h3><div class="fb">${po("mp")}<select id="mm">${mo("A")}</select><input id="mq" placeholder="Question"><input id="mw" placeholder="Mistake made"><input id="mr" placeholder="Correct rule/formula"><input id="mh" placeholder="How to remember"><select id="ms"><option>Open</option><option>Revising</option><option>Mastered</option></select><button class="pri" data-add="mist">Add</button></div><div class="sc"><table><tr><th>Paper<th>Module<th>Question<th>Mistake<th>Rule/formula<th>Remember<th>Status<th></tr>${S.mist.map((x,i)=>`<tr><td>${PN[x.p]}<td>${esc(x.m)}<td>${esc(x.q)}<td>${esc(x.w)}<td>${esc(x.r)}<td>${esc(x.h)}<td><select data-ms="${i}">${["Open","Revising","Mastered"].map(s=>`<option ${x.s==s?'selected':''}>${s}</option>`).join("")}</select><td><button data-del="mist" data-i="${i}" aria-label="Delete">✕</button></tr>`).join("")}</table></div>`}
+function mock(){return `<h3>Mock Test Tracker</h3><div class="fb">${po("kp")}<input id="kn" placeholder="Mock no."><input id="kd" type="date"><input id="ks" placeholder="Score"><input id="kt" placeholder="Target score"><input id="kx" placeholder="Time taken"><input id="kw" placeholder="Weak modules"><input id="ka" placeholder="Next action"><button class="pri" data-add="mock">Add</button></div><div class="sc"><table><tr><th>Paper<th>Mock<th>Date<th>Score<th>Target<th>Time<th>Weak modules<th>Next action<th></tr>${S.mock.map((x,i)=>`<tr><td>${PN[x.p]}<td>${esc(x.n)}<td>${esc(x.d)}<td>${esc(x.s)}<td>${esc(x.t)}<td>${esc(x.x)}<td>${esc(x.w)}<td>${esc(x.a)}<td><button data-del="mock" data-i="${i}" aria-label="Delete">✕</button></tr>`).join("")}</table></div>`}
+function resched(){const miss=T.filter(t=>t.k<tk&&!S.d[t.id]&&!S.mv[t.id]);if(!miss.length)return alert("No missed tasks to reschedule.");
+ const cap={};let n=0;const tg=DAYS.filter(D=>D.k>=tk&&D.k<="2026-12-05"&&(D.ty=='h'||D.ty=='s'));
+ miss.forEach(t=>{const D=tg.find(D=>(cap[D.k]||0)<(D.ty=='h'?2:1)+tasksFor(D.k).filter(x=>S.mv[x.id]==D.k).length*0&&(cap[D.k]||0)<(D.ty=='h'?2:1));if(D){cap[D.k]=(cap[D.k]||0)+1;S.mv[t.id]=D.k;n++}});
+ sv();alert(n+" of "+miss.length+" missed task(s) moved to catch-up days (holidays/Saturdays up to 5 Dec).");ui()}
+function ui(){const tabs=[["today","Today"],["week","Weekly"],["cal","Full Calendar"],["mod","Modules"],["mist","Mistake Book"],["mock","Mock Tracker"],["print","📄 PDF Download"]];
+ const D=DAYS.find(D=>D.k==tk);
+ $("#app").innerHTML=dash()+`<nav aria-label="Views">${tabs.map(t=>`<button data-v="${t[0]}" class="${view==t[0]?'on':''}">${t[1]}</button>`).join("")}<button data-act="resched">↻ Reschedule missed</button></nav>`+
+ (view=="today"?day(D):view=="week"?week():view=="cal"?cal(true):view=="mod"?mods():view=="mist"?mist():view=="mock"?mock():pdfp())}
+document.addEventListener("change",e=>{const x=e.target.dataset,v=e.target.value;
+ if(x.c){S.d[x.c]=e.target.checked;sv();ui()}else if(x.r){S.r[x.r]=v;sv();ui()}else if(x.n){S.n[x.n]=v;sv()}
+ else if(x.f&&x.f!="reset"){F[x.f]=v;ui()}else if(x.ms){S.mist[x.ms].s=v;sv()}else if(x.mp){$("#mm").innerHTML=mo(v)}});
+document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const x=b.dataset,g=i=>$("#"+i).value;
+ if(x.v){view=x.v;ui()}else if(x.w){wi=Math.min(Math.max(0,wi+ +x.w),DAYS.length-7);ui()}else if(x.f=="reset"){F={p:"",m:"",from:"",to:"",st:"",ty:""};ui()}
+ else if(x.rv){S.v[x.rv]=Math.max(0,(S.v[x.rv]||0)+ +x.dl);sv();ui()}else if(x.act=="resched")resched();else if(x.act=="print")window.print();
+ else if(x.add=="mist"){S.mist.push({p:g("mp"),m:g("mm"),q:g("mq"),w:g("mw"),r:g("mr"),h:g("mh"),s:g("ms")});sv();ui()}
+ else if(x.add=="mock"){S.mock.push({p:g("kp"),n:g("kn"),d:g("kd"),s:g("ks"),t:g("kt"),x:g("kx"),w:g("kw"),a:g("ka")});sv();ui()}
+ else if(x.pdf)dl(x.pdf);else if(x.del){S[x.del].splice(+x.i,1);sv();ui()}});
+const fd=D=>D.d.toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short'});
+function pdfp(){const W=[];DAYS.forEach((D,i)=>{if(!i||D.d.getDay()==1)W.push([D.k,D.k]);W[W.length-1][1]=D.k});
+ const dn=k=>fd(DAYS.find(D=>D.k==k)),op=(v,l,c)=>`<option value="${v}" ${c?'selected':''}>${l}</option>`;
+ return `<div class="pn"><h3>Download your plan as PDF</h3><p class="m">Choose a range, press the button, and in the print window that opens select <b>Save as PDF</b>. Includes your tick marks. If nothing opens, open this page in a full browser tab.</p><div class="g">
+<div><b>Today</b><span class="m">${dn(tk)}</span><button class="pri" data-pdf="today">Download today</button></div>
+<div><b>Single day</b><select id="pd" aria-label="Day">${DAYS.map(D=>op(D.k,fd(D),D.k==tk)).join("")}</select><button class="pri" data-pdf="day">Download day</button></div>
+<div><b>Week</b><select id="pw" aria-label="Week">${W.map((w,i)=>op(w.join("|"),`Week ${i+1}: ${dn(w[0])} – ${dn(w[1])}`,w[0]<=tk&&tk<=w[1])).join("")}</select><button class="pri" data-pdf="week">Download week</button></div>
+<div><b>Month</b><select id="pm" aria-label="Month">${op("2026-10","October 2026")}${op("2026-11","November 2026")}${op("2026-12","December 1–5, 2026")}</select><button class="pri" data-pdf="month">Download month</button></div>
+<div><b>Full planner</b><span class="m">6 Oct – 5 Dec, all days</span><button class="pri" data-pdf="full">Download full plan</button></div></div></div>`}
+function pdf(f,t,n){const ds=DAYS.filter(D=>D.k>=f&&D.k<=t);
+ $("#pdoc").innerHTML=`<h1>CMA Final Dec 2026 – ${esc(n)}</h1><div class="m">P17 CMAD · P18 CFR · P19 ITLP · Prep ends 5 Dec · Exams 11, 13, 15 Dec 2026</div>`+ds.map(D=>`<h3>${D.d.toLocaleDateString('en-IN',{weekday:'long',day:'2-digit',month:'long',year:'numeric'})} · ${D.lbl}${MIN[D.ty]?" · min "+MIN[D.ty]+" h":""}</h3><table><tr><th>Time<th>Paper<th>Module / subtopic<th>Activity<th>Hrs<th>Done</tr>${tasksFor(D.k).map(t=>`<tr><td>${t.time}<td>${PN[t.p]}<td>${esc(lab(t))}<td>${ACT[t.a]}<td>${t.h}<td>${S.d[t.id]?"☑":"☐"}</tr>`).join("")}</table>`).join("");
+ try{window.print()}catch(e){alert("Printing is blocked here – open the page in a full browser tab.")}}
+function dl(m){const v=i=>$("#"+i).value;let f,t,n;
+ if(m=="today"){f=t=tk;n="Today"}else if(m=="day"){f=t=v("pd");n="Day plan"}else if(m=="week"){[f,t]=v("pw").split("|");n="Weekly plan"}else if(m=="month"){const p=v("pm");f=p+"-01";t=p+"-31";n="Monthly plan"}else{f=DAYS[0].k;t=LAST;n="Full study plan"}pdf(f,t,n)}
+ui();
+</script></body></html>
